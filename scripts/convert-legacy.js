@@ -38,6 +38,25 @@ function convertTsToJson(tsContent, language) {
   }
 }
 
+// 展平嵌套对象为单层键值对
+function flattenObject(obj, prefix = '') {
+  const flattened = {};
+  
+  for (const [key, value] of Object.entries(obj)) {
+    const newKey = prefix ? `${prefix}.${key}` : key;
+    
+    if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+      // 递归展平嵌套对象
+      Object.assign(flattened, flattenObject(value, newKey));
+    } else {
+      // 直接赋值
+      flattened[newKey] = value;
+    }
+  }
+  
+  return flattened;
+}
+
 // 写入JSON文件
 function writeJsonFile(filePath, data) {
   try {
@@ -86,8 +105,9 @@ function convertLegacyFiles() {
     const enTranslations = convertTsToJson(enTsContent, 'en_US');
     
     if (enTranslations) {
+      const flattenedEn = flattenObject(enTranslations);
       const filePath = path.join('locales', 'en.json');
-      writeJsonFile(filePath, enTranslations);
+      writeJsonFile(filePath, flattenedEn);
     }
   }
   
@@ -98,8 +118,9 @@ function convertLegacyFiles() {
     const zhTranslations = convertTsToJson(zhTsContent, 'zh_CN');
     
     if (zhTranslations) {
+      const flattenedZh = flattenObject(zhTranslations);
       const filePath = path.join('locales', 'zh_Hans.json');
-      writeJsonFile(filePath, zhTranslations);
+      writeJsonFile(filePath, flattenedZh);
     }
   }
   
@@ -112,6 +133,11 @@ function convertLegacyFiles() {
   console.log('│   ├── en.json');
   console.log('│   └── zh_Hans.json');
   console.log('└── index.json');
+  console.log('\n翻译键格式示例:');
+  console.log('- common.search');
+  console.log('- home.title');
+  console.log('- courses.courseDetail');
+  console.log('- reviews.addReview');
 }
 
 // 运行转换
