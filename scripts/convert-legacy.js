@@ -58,18 +58,18 @@ function createLanguageIndex() {
         code: 'en',
         flag: '🇺🇸'
       },
-      'zh-CN': {
+      'zh_Hans': {
         name: 'Chinese (Simplified)',
         nativeName: '简体中文',
-        code: 'zh-CN',
+        code: 'zh_Hans',
         flag: '🇨🇳'
       }
     },
-    defaultLanguage: 'zh-CN',
+    defaultLanguage: 'zh_Hans',
     fallbackLanguage: 'en'
   };
   
-  writeJsonFile('locales/index.json', index);
+  writeJsonFile('index.json', index);
 }
 
 // 主转换函数
@@ -98,7 +98,7 @@ function convertLegacyFiles() {
     const zhTranslations = convertTsToJson(zhTsContent, 'zh_CN');
     
     if (zhTranslations) {
-      const filePath = path.join('locales', 'zh-CN.json');
+      const filePath = path.join('locales', 'zh_Hans.json');
       writeJsonFile(filePath, zhTranslations);
     }
   }
@@ -108,9 +108,9 @@ function convertLegacyFiles() {
   
   console.log('\n转换完成！');
   console.log('生成的文件结构:');
-  console.log('locales/');
-  console.log('├── en.json');
-  console.log('├── zh-CN.json');
+  console.log('├── locales/');
+  console.log('│   ├── en.json');
+  console.log('│   └── zh_Hans.json');
   console.log('└── index.json');
 }
 

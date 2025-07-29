@@ -11,17 +11,17 @@ WHU-sb-i18n/
 │   └── zh_CN.ts              # 中文翻译（TypeScript格式）
 ├── locales/                   # 新版JSON格式翻译文件
 │   ├── en.json               # 英文翻译（JSON格式）
-│   ├── zh-CN.json            # 中文翻译（JSON格式）
-│   └── index.json            # 语言配置索引
+│   └── zh_Hans.json          # 简体中文翻译（JSON格式）
 ├── scripts/                   # 转换脚本
 │   └── convert-legacy.js      # 从legacy TS文件转换为JSON格式
+├── index.json                 # 语言配置索引
 └── README.md                  # 项目说明
 ```
 
 ## 语言支持
 
 - **英文 (en)**: 英语翻译
-- **中文简体 (zh-CN)**: 简体中文翻译
+- **简体中文 (zh_Hans)**: 简体中文翻译
 
 ## 翻译文件结构
 
@@ -56,7 +56,7 @@ node scripts/convert-legacy.js
 1. 在 `locales/` 目录下创建新的语言文件（如 `ja.json`）
 2. 复制现有语言文件作为模板
 3. 翻译相应的内容
-4. 在 `locales/index.json` 中添加新语言配置
+4. 在 `index.json` 中添加新语言配置
 
 ### 添加新翻译键
 
