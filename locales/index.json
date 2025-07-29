@@ -1,0 +1,18 @@
+{
+  "languages": {
+    "en": {
+      "name": "English",
+      "nativeName": "English",
+      "code": "en",
+      "flag": "🇺🇸"
+    },
+    "zh-CN": {
+      "name": "Chinese (Simplified)",
+      "nativeName": "简体中文",
+      "code": "zh-CN",
+      "flag": "🇨🇳"
+    }
+  },
+  "defaultLanguage": "zh-CN",
+  "fallbackLanguage": "en"
+}

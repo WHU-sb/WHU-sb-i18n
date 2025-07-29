@@ -1,195 +1,83 @@
 # WHU-sb-i18n
 
-武汉大学课程评价系统 (WHU.sb) 的国际化翻译文件仓库。
+武汉大学课程评价系统的国际化翻译文件项目。
 
-## 📖 简介
-
-本仓库存储 WHU.sb 项目的所有国际化翻译文件，支持多语言本地化。通过集中管理翻译资源，便于维护和协作。
-
-## 🌍 支持的语言
-
-- 🇨🇳 **中文简体** (`zh-CN`) - 默认语言
-- 🇺🇸 **英文** (`en-US`) - 英文版本
-
-## 📁 文件结构
+## 目录结构
 
 ```
 WHU-sb-i18n/
-├── README.md
-├── zh-CN/
-│   ├── common.json          # 通用翻译
-│   ├── navigation.json      # 导航相关
-│   ├── home.json           # 首页相关
-│   ├── courses.json        # 课程相关
-│   ├── reviews.json        # 评价相关
-│   ├── teachers.json       # 教师相关
-│   ├── search.json         # 搜索相关
-│   ├── admin.json          # 管理后台
-│   ├── errors.json         # 错误页面
-│   ├── validation.json     # 表单验证
-│   └── time.json           # 时间相关
-├── en-US/
-│   ├── common.json
-│   ├── navigation.json
-│   ├── home.json
-│   ├── courses.json
-│   ├── reviews.json
-│   ├── teachers.json
-│   ├── search.json
-│   ├── admin.json
-│   ├── errors.json
-│   ├── validation.json
-│   └── time.json
-└── templates/
-    ├── common.json         # 翻译模板
-    ├── navigation.json
-    ├── home.json
-    ├── courses.json
-    ├── reviews.json
-    ├── teachers.json
-    ├── search.json
-    ├── admin.json
-    ├── errors.json
-    ├── validation.json
-    └── time.json
+├── legacy/                    # 旧版TypeScript格式翻译文件
+│   ├── en_US.ts              # 英文翻译（TypeScript格式）
+│   └── zh_CN.ts              # 中文翻译（TypeScript格式）
+├── locales/                   # 新版JSON格式翻译文件
+│   ├── en.json               # 英文翻译（JSON格式）
+│   ├── zh-CN.json            # 中文翻译（JSON格式）
+│   └── index.json            # 语言配置索引
+├── scripts/                   # 转换脚本
+│   └── convert-legacy.js      # 从legacy TS文件转换为JSON格式
+└── README.md                  # 项目说明
 ```
 
-## 🔧 使用方法
+## 语言支持
 
-### 1. 克隆仓库
+- **英文 (en)**: 英语翻译
+- **中文简体 (zh-CN)**: 简体中文翻译
+
+## 翻译文件结构
+
+翻译文件按功能模块组织，每个语言文件包含以下模块：
+
+- `common`: 通用翻译（按钮、状态、提示等）
+- `navigation`: 导航相关翻译
+- `home`: 首页相关翻译
+- `courses`: 课程相关翻译
+- `reviews`: 评价相关翻译
+- `teachers`: 教师相关翻译
+- `search`: 搜索相关翻译
+- `about`: 关于页面翻译
+- `error`: 错误页面翻译
+- `user`: 用户相关翻译
+- `admin`: 管理后台翻译
+- `validation`: 表单验证翻译
+- `time`: 时间相关翻译
+- `theme`: 主题相关翻译
+- `pagination`: 分页相关翻译
+
+## 使用方法
+
+### 转换legacy文件
 
 ```bash
-git clone https://github.com/your-username/WHU-sb-i18n.git
-cd WHU-sb-i18n
+node scripts/convert-legacy.js
 ```
 
-### 2. 在主项目中引用
+### 添加新语言
 
-在主项目 `WHU.sb` 中，可以通过以下方式引用翻译文件：
+1. 在 `locales/` 目录下创建新的语言文件（如 `ja.json`）
+2. 复制现有语言文件作为模板
+3. 翻译相应的内容
+4. 在 `locales/index.json` 中添加新语言配置
 
-```typescript
-// 动态导入翻译文件
-const loadTranslations = async (locale: string) => {
-  const translations = await import(`@/i18n/${locale}/index.json`)
-  return translations.default
-}
-```
+### 添加新翻译键
 
-### 3. 添加新语言
+1. 在所有语言的JSON文件中添加新的翻译键
+2. 确保所有语言都有对应的翻译
 
-1. 在根目录创建新的语言文件夹（如 `ja-JP/`）
-2. 复制 `templates/` 中的模板文件到新语言文件夹
-3. 翻译所有 JSON 文件中的内容
-4. 更新主项目的语言配置
+## 开发规范
 
-## 📝 翻译规范
+- 翻译键使用驼峰命名法（camelCase）
+- 翻译值使用双引号包围
+- 保持翻译键的一致性
+- 支持插值语法：`{variableName}`
+- 复数形式使用：`{count, plural, one {单数} other {复数}}`
 
-### 1. 文件命名
+## 贡献指南
 
-- 使用小写字母和连字符
-- 按功能模块分类
-- 保持文件名简洁明了
+1. Fork 项目
+2. 创建功能分支
+3. 提交翻译更改
+4. 创建 Pull Request
 
-### 2. JSON 结构
+## 许可证
 
-```json
-{
-  "common": {
-    "search": "搜索",
-    "submit": "提交",
-    "cancel": "取消"
-  },
-  "navigation": {
-    "home": "首页",
-    "courses": "课程"
-  }
-}
-```
-
-### 3. 翻译键命名
-
-- 使用点号分隔的层级结构
-- 使用小写字母和下划线
-- 保持语义清晰
-
-### 4. 占位符使用
-
-对于包含变量的翻译，使用 `{variableName}` 格式：
-
-```json
-{
-  "pagination": {
-    "showing": "显示第 {start} 到 {end} 条，共 {total} 条"
-  }
-}
-```
-
-## 🤝 贡献指南
-
-### 1. Fork 仓库
-
-1. 点击右上角的 "Fork" 按钮
-2. 克隆你的 Fork 到本地
-
-### 2. 创建分支
-
-```bash
-git checkout -b feature/add-new-language
-```
-
-### 3. 添加翻译
-
-1. 在对应语言文件夹中添加或修改翻译文件
-2. 确保 JSON 格式正确
-3. 测试翻译的完整性
-
-### 4. 提交更改
-
-```bash
-git add .
-git commit -m "feat: add Japanese translation"
-git push origin feature/add-new-language
-```
-
-### 5. 创建 Pull Request
-
-1. 在 GitHub 上创建 Pull Request
-2. 描述你的更改
-3. 等待审核和合并
-
-## 📋 翻译检查清单
-
-在提交翻译之前，请确保：
-
-- [ ] 所有翻译键都已翻译
-- [ ] JSON 格式正确
-- [ ] 占位符使用正确
-- [ ] 没有遗漏的翻译
-- [ ] 翻译内容准确且符合语境
-- [ ] 已测试翻译的显示效果
-
-## 🔄 同步更新
-
-当主项目添加新的翻译键时：
-
-1. 更新 `templates/` 中的模板文件
-2. 通知所有语言维护者
-3. 各语言维护者更新对应的翻译文件
-4. 确保所有语言版本保持同步
-
-## 📞 相关仓库
-
-- 项目主页：https://github.com/WHU-sb/WHU-sb
-- 翻译仓库：https://github.com/WHU-sb/WHU-sb-i18n
-
-## 📄 许可证
-
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
-
-## 🙏 致谢
-
-感谢所有为 WHU.sb 项目提供翻译支持的贡献者！
-
----
-
-**注意**：本仓库仅用于存储翻译文件，主项目代码请访问 [WHU.sb](https://github.com/your-username/WHU.sb) 仓库。
+MIT License
