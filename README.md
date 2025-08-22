@@ -6,15 +6,8 @@
 
 ```
 WHU-sb-i18n/
-├── legacy/                    # 旧版TypeScript格式翻译文件
-│   ├── en_US.ts              # 英文翻译（TypeScript格式）
-│   └── zh_CN.ts              # 中文翻译（TypeScript格式）
-├── locales/                   # 新版JSON格式翻译文件
-│   ├── en.json               # 英文翻译（JSON格式）
-│   └── zh_Hans.json          # 简体中文翻译（JSON格式）
-├── scripts/                   # 转换脚本
-│   └── convert-legacy.js      # 从legacy TS文件转换为JSON格式
-├── index.json                 # 语言配置索引
+│   en.json               # 英文翻译（JSON格式）
+│   zh_Hans.json          # 简体中文翻译（JSON格式）
 └── README.md                  # 项目说明
 ```
 
@@ -62,12 +55,6 @@ WHU-sb-i18n/
 - `pagination.*`: 分页相关翻译
 
 ## 使用方法
-
-### 转换legacy文件
-
-```bash
-node scripts/convert-legacy.js
-```
 
 ### 添加新语言
 
