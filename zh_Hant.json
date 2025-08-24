@@ -209,5 +209,21 @@
     "reviews.detail.title": "評價詳情",
     "courseDetail.title": "課程詳情",
     "notFound.search": "搜索",
-    "auth.login": "登錄"
+    "auth.login": "登錄",
+    "reviews.difficulty": "課程難度",
+    "reviews.workload": "工作量",
+    "reviews.teachingQuality": "教學質量",
+    "reviews.courseInterest": "課程趣味性",
+    "reviews.anonymous": "匿名發佈",
+    "reviews.submitReview": "提交評價",
+    "reviews.updateReview": "更新評價",
+    "reviews.deleteReview": "刪除評價",
+    "reviews.confirmDelete": "確認刪除此評價？",
+    "reviews.noReviews": "暫無評價",
+    "reviews.helpful": "有幫助",
+    "reviews.report": "舉報",
+    "reviews.reply": "回復",
+    "reviews.like": "點贊",
+    "reviews.unlike": "取消點贊",
+    "reviews.reviewHelpful": "此評價對您有幫助嗎？"
 }
