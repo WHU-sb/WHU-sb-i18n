@@ -675,5 +675,12 @@
     "adminLogin.loginFailedNoAuth": "Login failed: No authentication information was obtained",
     "adminLogin.loginFailed": "Login failed",
     "adminLogin.contactAdmin": "Contact the Administrator",
-    "adminLogin.contactAdminForPassword": "Please contact your system administrator to reset your password"
+    "adminLogin.contactAdminForPassword": "Please contact your system administrator to reset your password",
+    "admin.logout": "Logout",
+    "notFound.title": "Page Not Found",
+    "notFound.courseList": "Course List",
+    "notFound.teacherList": "Teacher List",
+    "notFound.reviewList": "Review List",
+    "notFound.search": "Search",
+    "adminLogin.loginSuccess": "Login successful"
 }
