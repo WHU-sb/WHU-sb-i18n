@@ -609,6 +609,8 @@
   "pwa.mobileAppNavDisabled": "Mobile App Navigation Disabled",
   "pwa.mobileAppNavForceEnabled": "Currently in App build mode, mobile navigation is force-enabled and cannot be changed.",
   "pwa.mobileAppNavForceEnabledBadge": "Force Enabled",
+  "pwa.mobileAppNavForceDisabled": "Mobile navigation is force-disabled by environment variable and cannot be changed.",
+  "pwa.mobileAppNavForceDisabledBadge": "Force Disabled",
   "common.refresh": "Refresh",
   "common.menu": "Menu",
   "common.theme": "Theme",

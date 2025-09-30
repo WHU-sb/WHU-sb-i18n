@@ -642,6 +642,8 @@
   "pwa.mobileAppNavDisabled": "已禁用移动端App导航",
   "pwa.mobileAppNavForceEnabled": "当前为App构建模式，移动导航已强制启用且不可更改。",
   "pwa.mobileAppNavForceEnabledBadge": "强制启用",
+  "pwa.mobileAppNavForceDisabled": "当前环境变量强制禁用移动导航，无法更改。",
+  "pwa.mobileAppNavForceDisabledBadge": "强制禁用",
   "theme.auto": "自动",
   "theme.dark": "深色",
   "theme.light": "浅色",
