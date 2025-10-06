@@ -329,6 +329,8 @@
   "auth.registerTab": "注册",
   "auth.title": "用户认证",
   "auth.username": "用户名",
+  "auth.validation.turnstileRequired": "请完成人机验证",
+  "auth.validation.turnstileFailed": "人机验证失败，请重试",
   "admin.adminConsole": "管理员控制台",
   "admin.confirmLogout": "确定要退出登录吗？",
   "admin.loadFailed": "加载失败",

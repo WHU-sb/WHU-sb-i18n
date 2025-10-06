@@ -303,6 +303,8 @@
   "auth.registerTab": "Register",
   "auth.title": "User Authentication",
   "auth.username": "Username",
+  "auth.validation.turnstileRequired": "Please complete the verification",
+  "auth.validation.turnstileFailed": "Verification failed, please try again",
   "addReview.addCourse": "Add Course",
   "addReview.addTeacher": "Add Teacher",
   "addReview.batchAddTeachers": "Batch Add",
