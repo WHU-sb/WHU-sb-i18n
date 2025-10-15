@@ -828,5 +828,11 @@
     "wasm.test.message": "A prompt window showing the message \"WebAssembly is not supported\" has been displayed, used for previewing the effect",
     "wasm.test.failed": "test failed",
     "wasm.test.failedMessage": "The message \"WASM is not supported\" cannot be displayed",
-    "wasm.browsers.chrome": "Google (Dual-Core) Browser Turbo Edition"
+    "wasm.browsers.chrome": "Google (Dual-Core) Browser Turbo Edition",
+    "wasm.browsers.samsung": "Samsung browser",
+    "wasm.browsers.uc": "UC browser",
+    "wasm.browsers.qq": "QQ browser",
+    "wasm.browsers.unknown": "Unknown browser",
+    "settings.cdn.title": "CDN settings",
+    "settings.cdn.testFailed": "Test failed"
 }
