@@ -818,7 +818,15 @@
     "pwa.settings.testWasmSupport": "Test WASM support",
     "wasm.error.title": "Your browser doesn't support WebAssembly",
     "wasm.browsers.firefox": "Firefox",
-    "wasm.browsers.safari": "Safari",
+    "wasm.browsers.safari": "Compass Browser",
     "wasm.browsers.edge": "Edge",
-    "wasm.browsers.opera": "Opera"
+    "wasm.browsers.opera": "Opera",
+    "wasm.error.message": "Your browser {browser} {version} does not support WebAssembly technology, and thus the signature function of this application cannot be used properly. Please upgrade to a supported browser version.",
+    "wasm.error.supportedBrowsers": "Supported browsers:",
+    "wasm.error.upgradeHint": "After upgrading your browser, please refresh the page and re-access.",
+    "wasm.test.title": "WASM Support Test",
+    "wasm.test.message": "A prompt window showing the message \"WebAssembly is not supported\" has been displayed, used for previewing the effect",
+    "wasm.test.failed": "test failed",
+    "wasm.test.failedMessage": "The message \"WASM is not supported\" cannot be displayed",
+    "wasm.browsers.chrome": "Google (Dual-Core) Browser Turbo Edition"
 }
