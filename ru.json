@@ -1,1 +1,9 @@
-{}
+{
+    "common.anonymous": "инкогнито",
+    "common.author": "автор",
+    "common.back": "вернут",
+    "common.cached": "кэш",
+    "common.cacheManagement": "Управление кэше",
+    "common.cancel": "исключать",
+    "common.clear": "очист"
+}
