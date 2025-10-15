@@ -834,5 +834,13 @@
     "wasm.browsers.qq": "QQ browser",
     "wasm.browsers.unknown": "Unknown browser",
     "settings.cdn.title": "CDN settings",
-    "settings.cdn.testFailed": "Test failed"
+    "settings.cdn.testFailed": "Test failed",
+    "settings.cdn.selectProvider": "Select a CDN provider",
+    "settings.cdn.default": "Default",
+    "settings.cdn.autoTest": "Auto test",
+    "settings.cdn.enableAutoTest": "Enable auto test",
+    "settings.cdn.testInterval": "Test interval",
+    "settings.cdn.testAll": "Test all",
+    "settings.cdn.autoSelect": "Auto select the best one",
+    "settings.cdn.reset": "Reset"
 }
