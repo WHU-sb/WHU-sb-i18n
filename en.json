@@ -1008,5 +1008,16 @@
   "wasm.test.failed": "test failed",
   "wasm.test.failedMessage": "The message \"WASM is not supported\" cannot be displayed",
   "wasm.test.message": "A prompt window showing the message \"WebAssembly is not supported\" has been displayed, used for previewing the effect",
-  "wasm.test.title": "WASM Support Test"
+  "wasm.test.title": "WASM Support Test",
+  "search.smartSuggestion.title": "Smart Search Suggestion",
+  "search.smartSuggestion.detail": "We detected that your search term might get better results in the suggested scope. Do you want to switch?",
+  "search.smartSuggestion.accept": "Accept",
+  "search.smartSuggestion.reject": "Continue",
+  "search.smartSuggestion.text": "Based on \"{reason}\", suggested scope: {suggestedScope}",
+  "search.addCourseReviewMobile": "Review",
+  "common.confirm": "Confirm",
+  "common.apply": "Apply",
+  "i18n.switch_zh_hant": "Traditional Chinese",
+  "i18n.switch_yue_hant": "Cantonese",
+  "i18n.detected_message_hk_mo": "We detected your region is Hong Kong or Macau. Switch to Traditional Chinese or Cantonese?"
 }
