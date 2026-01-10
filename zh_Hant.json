@@ -852,5 +852,13 @@
   "wasm.test.failed": "測試失敗",
   "wasm.test.failedMessage": "無法顯示WASM不支持提示",
   "wasm.test.message": "已顯示WebAssembly不支持時的提示彈窗，用於預覽效果",
-  "wasm.test.title": "WASM支持測試"
+  "wasm.test.title": "WASM支持測試",
+  "search.smartSuggestion.title": "智能搜尋建議",
+  "search.smartSuggestion.detail": "我們檢測到您的搜尋詞可能在建議的範圍內搜尋更佳，是否要切換搜尋範圍？",
+  "search.smartSuggestion.accept": "接受建議",
+  "search.smartSuggestion.reject": "繼續當前搜尋",
+  "search.smartSuggestion.text": "根據 \"{reason}\"，建議搜尋 {suggestedScope}",
+  "search.addCourseReviewMobile": "評價",
+  "common.confirm": "確認",
+  "common.apply": "應用"
 }
