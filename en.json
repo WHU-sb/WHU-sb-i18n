@@ -982,7 +982,6 @@
   "settings.cdn.default": "Default",
   "settings.cdn.enableAutoTest": "Enable auto test",
   "settings.cdn.noCdnConfigured": "You haven't configured CDN yet",
-  "settings.cdn.noCdnDescription": "There's no CDN provider is been configured. You only can you the local server. If you want to use CDN, please configure VITE_CDN_URL from PATH.",
   "settings.cdn.reset": "Reset",
   "settings.cdn.selectProvider": "Select a CDN provider",
   "settings.cdn.testAll": "Test all",

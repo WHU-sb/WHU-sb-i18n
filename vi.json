@@ -956,7 +956,6 @@
   "settings.cdn.default": "mặc định (mặc định)",
   "settings.cdn.enableAutoTest": "Bật thử nghiệm tự động",
   "settings.cdn.noCdnConfigured": "CDN chưa được cấu hình",
-  "settings.cdn.noCdnDescription": "Hiện tại không có nhà cung cấp CDN nào được cấu hình và chỉ có máy chủ cục bộ.Để sử dụng một CDN, hãy cấu hình VITE_CDN_URL trong biến môi trường.",
   "settings.cdn.reset": "Đặt lại các thiết lập",
   "settings.cdn.selectProvider": "Chọn nhà cung cấp CDN",
   "settings.cdn.testAll": "Kiểm tra tất cả",

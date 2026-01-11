@@ -826,7 +826,6 @@
   "settings.cdn.default": "默認",
   "settings.cdn.enableAutoTest": "啟用自動測試",
   "settings.cdn.noCdnConfigured": "未配置CDN",
-  "settings.cdn.noCdnDescription": "當前未配置任何CDN提供商，只能使用本地服務器。 如需使用CDN，請在環境變量中配置VITE_CDN_URL。",
   "settings.cdn.reset": "重置設置",
   "settings.cdn.selectProvider": "選擇CDN提供商",
   "settings.cdn.testAll": "測試所有",

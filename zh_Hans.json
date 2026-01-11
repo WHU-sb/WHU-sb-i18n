@@ -993,7 +993,6 @@
   "settings.cdn.devModeRestriction": "开发模式下只能使用本地服务器",
   "settings.cdn.enableAutoTest": "启用自动测试",
   "settings.cdn.noCdnConfigured": "未配置CDN",
-  "settings.cdn.noCdnDescription": "当前未配置任何CDN提供商，只能使用本地服务器。如需使用CDN，请在环境变量中配置 VITE_CDN_URL。",
   "settings.cdn.reset": "重置设置",
   "settings.cdn.selectProvider": "选择CDN提供商",
   "settings.cdn.testAll": "测试所有",
