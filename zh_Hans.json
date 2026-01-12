@@ -998,6 +998,8 @@
   "settings.cdn.testAll": "测试所有",
   "settings.cdn.testFailed": "测试失败",
   "settings.cdn.testInterval": "测试间隔",
+  "settings.cdn.testSuccess": "CDN 测速完成",
+  "settings.cdn.testingStatus": "测试中...",
   "settings.cdn.title": "CDN 设置",
   "settings.cdn.switchSuccess": "切换成功",
   "settings.cdn.switchSuccessDetail": "CDN 已切换",
