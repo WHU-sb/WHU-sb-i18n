@@ -859,5 +859,11 @@
   "search.smartSuggestion.text": "根據 \"{reason}\"，建議搜尋 {suggestedScope}",
   "search.addCourseReviewMobile": "評價",
   "common.confirm": "確認",
-  "common.apply": "應用"
+  "common.apply": "應用",
+  "app.legal.terms": "用戶協議",
+  "app.legal.privacy": "隱私政策",
+  "app.legal.loading_terms": "正在載入用戶協議...",
+  "app.legal.loading_privacy": "正在載入隱私政策...",
+  "app.legal.terms_not_available": "此語言暫不支持用戶協議。",
+  "app.legal.privacy_not_available": "此語言暫不支持隱私政策。"
 }

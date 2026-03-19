@@ -1016,5 +1016,11 @@
   "wasm.test.failed": "テストに失敗",
   "wasm.test.failedMessage": "WASMサポートされていないプロンプトを表示できません",
   "wasm.test.message": "Web Assemblyがサポートされていない場合に効果をプレビューするポップアップを表示",
-  "wasm.test.title": "WASMサポートテスト"
+  "wasm.test.title": "WASMサポートテスト",
+  "app.legal.terms": "利用規約",
+  "app.legal.privacy": "プライバシーポリシー",
+  "app.legal.loading_terms": "利用規約を読み込み中...",
+  "app.legal.loading_privacy": "プライバシーポリシーを読み込み中...",
+  "app.legal.terms_not_available": "この言語では利用規約をご利用いただけません。",
+  "app.legal.privacy_not_available": "この言語ではプライバシーポリシーをご利用いただけません。"
 }
