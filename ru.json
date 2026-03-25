@@ -666,7 +666,7 @@
   "pwa.settings.subtitle": "Управление кэшированием и обновлением приложений",
   "pwa.settings.testConnection": "Проверить соединение",
   "pwa.settings.testWasmSupport": "Тестирование поддержки WASM",
-  "pwa.settings.title": "Параметры PWA",
+  "pwa.settings.title": "Параметры",
   "pwa.settings.updateNow": "Обновить немедленно",
   "pwa.staticResourceCache": "Статический кэш ресурсов",
   "pwa.status.offline": "офлайн",

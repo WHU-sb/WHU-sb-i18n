@@ -633,7 +633,7 @@
   "pwa.settings.subtitle": "Manage app cache and updates",
   "pwa.settings.testConnection": "Test Connection",
   "pwa.settings.testWasmSupport": "Test WASM support",
-  "pwa.settings.title": "PWA Settings",
+  "pwa.settings.title": "Settings",
   "pwa.settings.updateNow": "Update Now",
   "pwa.staticResourceCache": "Static Resource Cache",
   "pwa.status.offline": "Offline",
@@ -1061,5 +1061,7 @@
   "app.legal.loading_terms": "Loading User Agreement...",
   "app.legal.loading_privacy": "Loading Privacy Policy...",
   "app.legal.terms_not_available": "User Agreement not available in this language.",
-  "app.legal.privacy_not_available": "Privacy Policy not available in this language."
+  "app.legal.privacy_not_available": "Privacy Policy not available in this language.",
+  "legal.userAgreement": "User Agreement",
+  "legal.privacyPolicy": "Privacy Policy"
 }

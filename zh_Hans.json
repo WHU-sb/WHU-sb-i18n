@@ -643,7 +643,7 @@
   "pwa.settings.subtitle": "管理应用缓存和更新",
   "pwa.settings.testConnection": "测试连接",
   "pwa.settings.testWasmSupport": "测试WASM支持",
-  "pwa.settings.title": "PWA设置",
+  "pwa.settings.title": "设置",
   "pwa.settings.updateNow": "立即更新",
   "pwa.staticResourceCache": "静态资源缓存",
   "pwa.status.offline": "离线",
@@ -1061,5 +1061,7 @@
   "app.legal.loading_terms": "正在加载用户协议...",
   "app.legal.loading_privacy": "正在加载隐私政策...",
   "app.legal.terms_not_available": "此语言暂不支持用户协议。",
-  "app.legal.privacy_not_available": "此语言暂不支持隐私政策。"
+  "app.legal.privacy_not_available": "此语言暂不支持隐私政策。",
+  "legal.userAgreement": "用户协议",
+  "legal.privacyPolicy": "隐私政策"
 }

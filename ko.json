@@ -666,7 +666,7 @@
   "pwa.settings.subtitle": "애플리케이션 캐시 및 업데이트 관리",
   "pwa.settings.testConnection": "연결 테스트",
   "pwa.settings.testWasmSupport": "WASM 지원 테스트",
-  "pwa.settings.title": "PWA 설정",
+  "pwa.settings.title": "설정",
   "pwa.settings.updateNow": "지금 업데이트",
   "pwa.staticResourceCache": "정적 리소스 캐시",
   "pwa.status.offline": "오프라인",

@@ -620,7 +620,7 @@
   "pwa.settings.subtitle": "管理應用快取同更新",
   "pwa.settings.testConnection": "測試連接",
   "pwa.settings.testWasmSupport": "測試WASM支持",
-  "pwa.settings.title": "PWA設置",
+  "pwa.settings.title": "設置",
   "pwa.settings.updateNow": "立即更新",
   "pwa.staticResourceCache": "靜態資源快取",
   "pwa.status.offline": "離線",

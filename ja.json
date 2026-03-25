@@ -666,7 +666,7 @@
   "pwa.settings.subtitle": "アプリケーションキャッシュと更新の管理",
   "pwa.settings.testConnection": "接続のテスト",
   "pwa.settings.testWasmSupport": "WASMサポートのテスト",
-  "pwa.settings.title": "PWAの設定",
+  "pwa.settings.title": "設定",
   "pwa.settings.updateNow": "すぐに更新。",
   "pwa.staticResourceCache": "静的リソースキャッシュ",
   "pwa.status.offline": "オフラインで。",

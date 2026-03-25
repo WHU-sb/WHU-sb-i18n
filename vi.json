@@ -666,7 +666,7 @@
   "pwa.settings.subtitle": "Quản lý bộ nhớ đệm ứng dụng và cập nhật",
   "pwa.settings.testConnection": "Kiểm tra kết nối",
   "pwa.settings.testWasmSupport": "Kiểm tra hỗ trợ WASM",
-  "pwa.settings.title": "Cài đặt PWA",
+  "pwa.settings.title": "Cài đặt",
   "pwa.settings.updateNow": "Cập nhật ngay lập tức",
   "pwa.staticResourceCache": "Bộ nhớ đệm tài nguyên tĩnh",
   "pwa.status.offline": "Ngắt kết nối (offline)",

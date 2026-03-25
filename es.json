@@ -666,7 +666,7 @@
   "pwa.settings.subtitle": "Gestión de caché y actualización de aplicaciones",
   "pwa.settings.testConnection": "Prueba de conexión",
   "pwa.settings.testWasmSupport": "Prueba de soporte WASM",
-  "pwa.settings.title": "Configuración PWA",
+  "pwa.settings.title": "Configuración",
   "pwa.settings.updateNow": "Actualización inmediata",
   "pwa.staticResourceCache": "Cache de recursos estáticos",
   "pwa.status.offline": "Offline",
