@@ -49,5 +49,3 @@ As platform functions evolve, we may revise this Privacy Policy at any time. For
 ## 9. Contact Us
 
 If you have any questions, comments, or complaints regarding the Privacy Policy, please contact us via GitHub Issues or the email on the "About" page. We will process your feedback within a reasonable timeframe.
-
-> Last updated: March 18, 2026
