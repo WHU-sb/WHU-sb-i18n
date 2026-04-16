@@ -1026,5 +1026,11 @@
   "utilities.subtitle": "Campus Tools · 效率从此开始",
   "utilities.title": "工具箱",
   "validation.maxLength": "超出最大长度 {max}",
-  "validation.minLength": "未达到最小长度 {max}"
+  "validation.minLength": "未达到最小长度 {max}",
+  "about.hero.title": "我们的使命",
+  "about.hero.content": "发现更好的课程",
+  "about.philosophy.md": "# 开源\n由社区共同构建。",
+  "about.team.title": "核心团队 / Contributors",
+  "app.navigation.utilities": "工具",
+  "navigation.profile": "用户"
 }
