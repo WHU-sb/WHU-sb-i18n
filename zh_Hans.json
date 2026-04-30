@@ -115,5 +115,21 @@
   "legal.privacy.title": "隐私政策",
   "legal.privacy.fallback": "未能加载隐私政策内容。",
   "legal.terms.title": "服务条款",
-  "legal.terms.fallback": "未能加载服务条款内容。"
+  "legal.terms.fallback": "未能加载服务条款内容。",
+  "teacher.detail.notFound": "未找到教师详情",
+  "teacher.detail.overallRating": "综合评分",
+  "teacher.detail.taughtCourses": "教授课程",
+  "login.ssoSuccessNotice": "校内统一身份登录成功后将自动返回。",
+  "admin.review.reject": "拒绝",
+  "admin.review.confirmRejectTitle": "确定拒绝评价？",
+  "admin.review.titleLabel": "评价标题",
+  "common.confirm": "确认",
+  "login.title": "登录",
+  "login.subtitle": "使用武汉大学统一身份认证访问 WHU.sb",
+  "login.continueWithSSO": "通过武大认证登录",
+  "login.signingIn": "正在登录...",
+  "login.callbackError": "SSO 回调参数缺失",
+  "login.failed": "登录失败",
+  "common.backToLogin": "返回登录",
+  "about.devTeam": "开发团队"
 }

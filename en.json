@@ -115,5 +115,21 @@
   "legal.privacy.title": "Privacy Policy",
   "legal.privacy.fallback": "Failed to load Privacy Policy content.",
   "legal.terms.title": "Terms of Service",
-  "legal.terms.fallback": "Failed to load Terms of Service content."
+  "legal.terms.fallback": "Failed to load Terms of Service content.",
+  "teacher.detail.notFound": "Teacher details not found",
+  "teacher.detail.overallRating": "Overall Rating",
+  "teacher.detail.taughtCourses": "Taught Courses",
+  "login.ssoSuccessNotice": "Redirecting automatically after successful campus SSO login.",
+  "admin.review.reject": "Reject",
+  "admin.review.confirmRejectTitle": "Confirm Reject Review?",
+  "admin.review.titleLabel": "Review Title",
+  "common.confirm": "Confirm",
+  "login.title": "Sign In",
+  "login.subtitle": "Use unified WHU identity to access WHU.sb",
+  "login.continueWithSSO": "Continue with WHU SSO",
+  "login.signingIn": "Signing you in...",
+  "login.callbackError": "SSO callback is missing parameters.",
+  "login.failed": "Failed to complete SSO login.",
+  "common.backToLogin": "Back to Login",
+  "about.devTeam": "Development Team"
 }
