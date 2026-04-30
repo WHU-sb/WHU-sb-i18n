@@ -2,8 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT_DIR = path.resolve(__dirname, '../../..'); 
-const APPS_DIR = path.join(ROOT_DIR, 'apps');
-const PACKAGES_DIR = path.join(ROOT_DIR, 'packages');
+const SRC_DIR = path.join(ROOT_DIR, 'src');
 const LOCALES_DIR = path.resolve(__dirname, '..');
 
 const SOURCE_EXTENSIONS = ['.vue', '.ts', '.js', '.jsx', '.tsx'];
@@ -56,18 +55,10 @@ function findUsedKeys(sourceFiles) {
 function main() {
   console.log('🔍 Validate i18n process starting...');
   
-  const scanDirs = [APPS_DIR, PACKAGES_DIR];
+  const scanDirs = [SRC_DIR];
   let allSourceFiles = [];
   scanDirs.forEach(dir => {
-    if (fs.existsSync(dir)) {
-      const children = fs.readdirSync(dir);
-      children.forEach(child => {
-        const fullPath = path.join(dir, child);
-        if (fs.statSync(fullPath).isDirectory()) {
-          allSourceFiles = allSourceFiles.concat(getAllSourceFiles(fullPath, SOURCE_EXTENSIONS));
-        }
-      });
-    }
+    allSourceFiles = allSourceFiles.concat(getAllSourceFiles(dir, SOURCE_EXTENSIONS));
   });
   
   const zhPath = path.join(LOCALES_DIR, 'zh_Hans.json');
@@ -123,9 +114,17 @@ function main() {
     console.warn('⚠️  Unused Translation Keys (Possible candidates for deletion):');
     const allUnused = new Set([...unusedInZh, ...unusedInEn]);
     allUnused.forEach(k => console.warn(` - ${k}`));
-    // Initially we might not want to break build for unused keys, but user requested it.
-    // hasError = true; 
   }
+
+  const results = {
+    parityErrorsZh: inZhNotEn,
+    parityErrorsEn: inEnNotZh,
+    missingInZh: missingInZh,
+    missingInEn: missingInEn,
+    unusedKeys: Array.from(new Set([...unusedInZh, ...unusedInEn])),
+    hasError: hasError
+  };
+  fs.writeFileSync(path.join(__dirname, 'validate_results.json'), JSON.stringify(results, null, 2));
 
   if (hasError) {
     console.error('\n💥 I18n Validation failed.');

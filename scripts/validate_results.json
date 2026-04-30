@@ -1,0 +1,13 @@
+{
+  "parityErrorsZh": [],
+  "parityErrorsEn": [],
+  "missingInZh": [],
+  "missingInEn": [],
+  "unusedKeys": [
+    "legal.privacy.title",
+    "legal.privacy.fallback",
+    "legal.terms.title",
+    "legal.terms.fallback"
+  ],
+  "hasError": false
+}
